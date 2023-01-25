@@ -2,16 +2,16 @@
 
 namespace Illuminate\Notifications\Tests\Unit\Channels;
 
-use Hamcrest\Core\IsEqual;
 use Illuminate\Notifications\Channels\ClickSendSmsChannel;
 use Illuminate\Notifications\Messages\ClickSendMessage;
+use Mockery\Adapter\Phpunit\MockeryPHPUnitIntegration;
 use Illuminate\Notifications\Notification;
 use Illuminate\Notifications\Notifiable;
-use Mockery\Adapter\Phpunit\MockeryPHPUnitIntegration;
-use Mockery as m;
-use PHPUnit\Framework\TestCase;
-use ClickSend\Api as Client;
 use ClickSend\Model\SmsMessage as SMS;
+use ClickSend\Api\SMSApi as Client;
+use PHPUnit\Framework\TestCase;
+use Hamcrest\Core\IsEqual;
+use Mockery as m;
 
 class ClickSendSmsChannelTest extends TestCase
 {
