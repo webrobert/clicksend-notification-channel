@@ -41,8 +41,8 @@ class ClickSendSmsChannel
      * Send the given notification.
      *
      * @param  mixed  $notifiable
-     * @param  \Illuminate\Notifications\Notification  $notification
-     * return \Vonage\Message\Message
+     * @param  \Illuminate\Notifications\Notification $notification
+     * @return mixed
      */
     public function send($notifiable, Notification $notification)
     {

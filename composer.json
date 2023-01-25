@@ -1,6 +1,7 @@
 {
     "name": "webrobert/clicksend-notification-channel",
     "description": "ClickSend Notification Channel for Laravel.",
+    "keywords": ["laravel", "notifications", "clicksend", "sms"],
     "license": "MIT",
     "authors": [
         {
